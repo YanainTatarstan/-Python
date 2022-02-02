@@ -19,12 +19,14 @@ print(f"Ваше имя: {a}")
 print(f"Ваш возраст: {b}")
 print(f"Ваш номер телефона: {c}")
 
+
 time_in_sec = int(input("Введите время в секундах: "))
 hours = time_in_sec // 3600
 residue = time_in_sec % 3600
 minutes = residue // 60
 sec = residue % 60
 print(f"{time_in_sec} секунд, это: {hours} ч; {minutes} мин; {sec} сек ")
+
 
 number_n = int(input("Введите целое число n (от 1 до 99999): "))
 while number_n >= 1 and number_n <= 99999:
@@ -44,6 +46,7 @@ for i in number:
         x = int(i)
 print("Самая большая цифра в числе: ", x)
 
+
 n = int(input("Введите любое целое число (напр. 12345): "))
 max = n % 10
 while n >= 1:
@@ -55,6 +58,7 @@ while n >= 1:
     else:
         print("Самая большая цифра в числе ", max)
         break
+
 
 profit = float(input("Введите прибыль за квартал, руб.: "))
 loss = float(input("Введите расходы за квартал, руб.: "))
@@ -69,6 +73,7 @@ elif profit == loss:
 else:
     print("Расходы привышают доходы. Необходимо проверить введённые данные, либо бухгалтерскую отчетность!")
 
+    
 a = float(input("Введите результат первого дня пробежки, км: "))
 b = float(input("Введите желаемый конечный результат, км: "))
 day_1 = 1
